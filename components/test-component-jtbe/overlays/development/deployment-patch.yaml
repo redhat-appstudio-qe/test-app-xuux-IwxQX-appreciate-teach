@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-jtbe
+  namespace: build-e2e-zhtx-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:628bee46cd7978961aaa1f79a3373b3d7a32a8879aea816532150ea3b9d2585e
+        name: my-python
+        resources: {}
+status: {}
